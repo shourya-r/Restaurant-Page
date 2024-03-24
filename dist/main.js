@@ -1,1 +1,1 @@
-console.log("Test");
+document.querySelector(".main").appendChild(function(){const e=document.createElement("header"),t=document.createElement("h1");t.textContent="Tikka Treasure";const n=function(){const e=document.createElement("nav"),t=document.createElement("button");t.textContent="Home";const n=document.createElement("button");n.textContent="Menu";const o=document.createElement("button");return o.textContent="Contact Us",e.appendChild(t),e.appendChild(n),e.appendChild(o),e}();return e.appendChild(t),e.appendChild(n),e}());
