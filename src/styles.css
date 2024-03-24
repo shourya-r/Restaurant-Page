@@ -1,0 +1,42 @@
+.header{
+    border-style: solid;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    margin: 0px;
+
+}
+
+.title{
+    font-family: "Satisfy", cursive;
+    font-size: 50px;
+    text-align: center;
+    margin: 15px;
+}
+
+.navBar{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.navButton{
+    font-family: "Satisfy", cursive;
+    color:rgb(181, 94, 23);
+    font-size: 20px;
+    margin-right: 10px;
+    background-color: 	#f3e88c;
+    border: none;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 10px;
+}
+
+.navButton:hover{
+    background-color:#ecdd55 ;
+}
+body{
+    background-color: 	#f3e88c;
+    margin: 0px;
+}   
