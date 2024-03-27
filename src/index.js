@@ -1,6 +1,8 @@
 import './styles.css';
 import { loadHome } from './home.js';
 import { loadContact } from './contact.js';
+import { loadMenu } from './menu.js';
+
 const body = document.querySelector("body");
 
 function createHeader(){
@@ -35,6 +37,11 @@ function createNavBar(){
     const menuBtn = document.createElement('button');
     menuBtn.textContent = "Menu";
     menuBtn.classList.add('navButton');
+    menuBtn.addEventListener('click', ()=>{
+        const main = document.querySelector('.main');
+        main.textContent = '';
+        main.appendChild(loadMenu());
+    });
 
     const contactBtn = document.createElement('button');
     contactBtn.textContent = "Contact Us";

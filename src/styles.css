@@ -72,3 +72,28 @@ body{
 .locationImage{
     width: 500px;
 }
+
+.menuGrid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    
+}
+
+.menuImage{
+    width: 200px;
+    height: 200px; 
+    border-radius: 100px;
+}
+
+.menuItemName{
+    text-align: center;
+    margin-top: 40px;
+    font-family: "Satisfy", cursive;
+    font-size: 20px;
+}
+
+@media (max-width: 750px) {
+    .menuGrid {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
