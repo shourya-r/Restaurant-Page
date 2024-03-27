@@ -1,6 +1,8 @@
 import './styles.css';
 import { loadHome } from './home.js';
 
+const body = document.querySelector("body");
+
 function createHeader(){
     const header = document.createElement("header");
     header.classList.add('header');
@@ -24,6 +26,11 @@ function createNavBar(){
     const homeBtn = document.createElement('button');
     homeBtn.textContent = "Home";
     homeBtn.classList.add('navButton');
+    homeBtn.addEventListener('click', ()=>{
+        const main = document.querySelector('.main');
+        main.textContent = '';
+        main.appendChild(loadHome());
+    });
     
     const menuBtn = document.createElement('button');
     menuBtn.textContent = "Menu";
@@ -40,10 +47,16 @@ function createNavBar(){
     return navBar;
 }
 
-const main = document.querySelector(".main");
+function createMain(){
+    const main = document.createElement('div');
+    main.classList.add('main');
+    return main;
+}
 
 function initialiseWebsite(){
-    main.appendChild(createHeader());
+    body.appendChild(createHeader());
+    const main = createMain();
+    body.appendChild(main);
     main.appendChild(loadHome());
 }
 
