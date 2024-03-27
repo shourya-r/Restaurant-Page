@@ -1,10 +1,8 @@
 .header{
     border-style: solid;
-    border-top: 0px;
     border-left: 0px;
     border-right: 0px;
-    margin: 0px;
-
+    background-color: rgb(226, 171, 68);
 }
 
 .title{
@@ -22,10 +20,10 @@
 
 .navButton{
     font-family: "Satisfy", cursive;
-    color:rgb(181, 94, 23);
+    color:rgb(142, 74, 18);
     font-size: 20px;
     margin-right: 10px;
-    background-color: 	#f3e88c;
+    background-color: rgb(226, 171, 68);
     border: none;
     padding: 10px;
     padding-left: 20px;
@@ -34,8 +32,9 @@
 }
 
 .navButton:hover{
-    background-color:#ecdd55 ;
+    background-color:rgb(237, 193, 110);
 }
+
 body{
     background-color: 	#f3e88c;
     margin: 0px;
