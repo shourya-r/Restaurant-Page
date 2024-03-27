@@ -40,3 +40,14 @@ body{
     background-color: 	#f3e88c;
     margin: 0px;
 }   
+
+.chefImage{
+    width: 200px;
+    border-radius: 200px;
+}
+
+.imageDiv{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 40px;
+}

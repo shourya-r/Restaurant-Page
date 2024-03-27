@@ -1,9 +1,10 @@
 import './styles.css';
+import { loadHome } from './home.js';
 
 function createHeader(){
     const header = document.createElement("header");
     header.classList.add('header');
-    
+
     const title = document.createElement("h1");
     title.textContent = "Tikka Treasure";
     title.classList.toggle('title');
@@ -43,6 +44,7 @@ const main = document.querySelector(".main");
 
 function initialiseWebsite(){
     main.appendChild(createHeader());
+    main.appendChild(loadHome());
 }
 
 initialiseWebsite();
