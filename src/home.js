@@ -16,10 +16,15 @@ function createImageDiv(){
 }
 
 function createDescriptionDiv(text){
+    const outerDiv = document.createElement('div');
+    outerDiv.classList.add('outerDiv');
+
     const descriptionDiv = document.createElement('div');
     descriptionDiv.textContent = text;
     descriptionDiv.classList.add('descriptionDiv');
-    return descriptionDiv;
+
+    outerDiv.appendChild(descriptionDiv);
+    return outerDiv;
 }
 
 function loadHome(){

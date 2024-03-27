@@ -55,8 +55,17 @@ body{
 .descriptionDiv{
     width: 650px;
     text-align: center;
-    margin-left: 300px;
     margin-top: 40px;
     font-family: "Satisfy", cursive;
     font-size: 20px;
+}
+
+.outerDiv
+{
+    display: flex;
+    justify-content: center;
+}
+
+.contentDiv{
+    margin-bottom: 50px;
 }
