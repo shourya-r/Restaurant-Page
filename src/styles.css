@@ -69,3 +69,7 @@ body{
 .contentDiv{
     margin-bottom: 50px;
 }
+
+.locationImage{
+    width: 500px;
+}

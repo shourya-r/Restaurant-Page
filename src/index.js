@@ -1,6 +1,6 @@
 import './styles.css';
 import { loadHome } from './home.js';
-
+import { loadContact } from './contact.js';
 const body = document.querySelector("body");
 
 function createHeader(){
@@ -39,6 +39,11 @@ function createNavBar(){
     const contactBtn = document.createElement('button');
     contactBtn.textContent = "Contact Us";
     contactBtn.classList.add('navButton');
+    contactBtn.addEventListener('click',()=>{
+        const main = document.querySelector('.main');
+        main.textContent = '';
+        main.appendChild(loadContact());
+    });
 
     navBar.appendChild(homeBtn);
     navBar.appendChild(menuBtn);
