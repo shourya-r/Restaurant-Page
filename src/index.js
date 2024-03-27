@@ -24,7 +24,7 @@ function createNavBar(){
     const homeBtn = document.createElement('button');
     homeBtn.textContent = "Home";
     homeBtn.classList.add('navButton');
-
+    
     const menuBtn = document.createElement('button');
     menuBtn.textContent = "Menu";
     menuBtn.classList.add('navButton');
